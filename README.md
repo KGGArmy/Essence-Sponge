@@ -1,4 +1,4 @@
-Essence Sponge[![Build Status]]
+Essence Sponge[![Build Status]](https://travis-ci.org/KGGArmy/Essence-Sponge)
 ==============
 
 **Currently not stable and under heavy development!**
@@ -43,7 +43,6 @@ In order to build Essence Sponge you simply need to run the `gradle` command.
 You can find the compiled JAR file in `./build/libs` labeled similarly to 'Essence-Sponge-x.x-SNAPSHOT.jar'.
 
 [Build Status]: https://travis-ci.org/KGGArmy/Essence-Sponge.svg?master
-[![Build Status]]: https://travis-ci.org/KGGArmy/Essence-Sponge
 [website]: http://essencemc.org
 [Website]: http://essencemc.org
 [Wiki]: https://github.com/KGGArmy/Essence-Sponge/wiki
