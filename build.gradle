@@ -2,7 +2,7 @@ plugins {
     id "com.github.hierynomus.license" version "0.12.1"
 }
 
-group 'org.essencemc'
+group 'org.essencemc.essencesponge'
 version '0.1-SNAPSHOT'
 
 apply plugin: 'java'
