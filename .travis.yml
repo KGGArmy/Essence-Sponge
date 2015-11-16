@@ -8,6 +8,8 @@ env: GRADLE_OPTS="-Xms1g -Xmx3g"
 install: true
 script: ./gradlew build
 
+before_install:
+ - chmod +x gradlew
 
 notifications:
   email: false
