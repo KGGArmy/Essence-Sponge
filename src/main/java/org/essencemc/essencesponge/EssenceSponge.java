@@ -25,7 +25,15 @@
 
 package org.essencemc.essencesponge;
 
+import com.google.inject.Inject;
+import org.slf4j.Logger;
+import org.spongepowered.api.Game;
+import org.spongepowered.api.event.Listener;
+import org.spongepowered.api.event.game.state.*;
 import org.spongepowered.api.plugin.Plugin;
+import org.spongepowered.api.service.config.DefaultConfig;
+
+import java.io.File;
 
 import static org.essencemc.essencesponge.PluginDescription.*;
 
@@ -34,4 +42,59 @@ import static org.essencemc.essencesponge.PluginDescription.*;
  */
 @Plugin(id = ID, name = NAME, version = VERSION, dependencies = DEPENDENCIES)
 public class EssenceSponge {
+
+    @Inject
+    @DefaultConfig(sharedRoot = false)
+    private File configDir;
+
+    @Inject
+    private Logger logger;
+
+    @Inject
+    private Game game;
+
+    @Listener
+    public void onPreInitialization(GamePreInitializationEvent event) {
+        getLogger().info(ID + " is loading...");
+
+        if (!configDir.exists()) {
+            configDir.mkdirs();
+        }
+
+        //TODO add config loaders
+
+    }
+
+    @Listener
+    public void onInitialization(GameInitializationEvent event) {
+        // TODO register commands
+        // TODO register events
+    }
+
+    @Listener
+    public void onLoadComplete(GameLoadCompleteEvent event) {
+        getLogger().info(ID + " has been loaded!");
+    }
+
+    @Listener
+    public void onStopping(GameStoppingEvent event) {
+        getLogger().info(ID + " is unloading");
+    }
+
+    @Listener
+    public void onStopped(GameStoppedServerEvent event) {
+        getLogger().info(ID + " has been unloaded!");
+    }
+
+    public File getConfigDir() {
+        return configDir;
+    }
+
+    public Logger getLogger() {
+        return logger;
+    }
+
+    public Game getGame() {
+        return game;
+    }
 }
