@@ -30,6 +30,7 @@ For the guidelines please see our [contributing guidelines] for more information
 
 ## Clone
 The following steps will ensure your project is cloned properly.
+
 1. `git clone git@github.com:SpongePowered/SpongeAPI.git`  
 2. `cd Essence-Sponge` 
 
