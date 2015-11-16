@@ -25,10 +25,10 @@ Contributing to Essence Sponge
     
 * Imports
     * Imports must be grouped in the following order, where each group is separated by an empty line
-        * Static imports
-        * All other imports
+        * All imports
         * java imports
         * javax imports
+        * Static imports
 
 * Javadocs
     * Do not use @author
