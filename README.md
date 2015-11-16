@@ -32,7 +32,22 @@ For the guidelines please see our [contributing guidelines] for more information
 The following steps will ensure your project is cloned properly.
 
 1. `git clone https://github.com/KGGArmy/Essence-Sponge.git`  
-2. `cd Essence-Sponge` 
+2. `cd Essence-Sponge`
+
+## Development Environment
+__Note:__ If you do not have [Gradle] installed then use ./gradlew for Unix systems or Git Bash and gradlew.bat for
+Windows systems in place of any 'gradle' command.
+
+If you are a contributor, it is important that your development environment is setup properly. After cloning, as shown 
+above, follow the given steps for your ide:
+
+#### [IntelliJ]
+
+1. `gradle idea --refresh-dependencies`
+
+#### [Eclipse]
+
+1. `gradle eclipse --refresh-dependencies`
 
 ## Building
 __Note:__ If you do not have [Gradle] installed then use ./gradlew for Unix systems or Git Bash and gradlew.bat for
@@ -55,3 +70,5 @@ You can find the compiled JAR file in `./build/libs` labeled similarly to 'Essen
 [contributing guidelines]: Contributors.md
 [Java]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 [Gradle]: https://www.gradle.org/
+[IntelliJ]: https://www.jetbrains.com/idea/
+[Eclipse]: https://www.eclipse.org/
