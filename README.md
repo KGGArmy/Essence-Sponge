@@ -41,7 +41,7 @@ Windows systems in place of any 'gradle' command.
 We use [Gradle] for Essence Sponge.
 
 In order to build Essence Sponge you simply need to run the `gradle` command.
-You can find the compiled JAR file in `./build/libs` labeled similarly to 'Essence-Sponge-x.x-SNAPSHOT.jar'.
+You can find the compiled JAR file in `./build/libs` labeled similarly to 'Essence-Sponge-x.x.x-SNAPSHOT.jar'.
 
 [Build Status]: https://travis-ci.org/KGGArmy/Essence-Sponge.svg?master
 [website]: http://essencemc.org
