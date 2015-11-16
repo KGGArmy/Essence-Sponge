@@ -51,7 +51,7 @@ You can find the compiled JAR file in `./build/libs` labeled similarly to 'Essen
 [Issues]: https://github.com/KGGArmy/Essence-Sponge/issues
 [Source]: https://github.com/KGGArmy/Essence-Sponge/
 [MIT]: https://tldrlegal.com/license/mit-license
-[publishing guidelines]: (./Publishing.md)
-[contributing guidelines]: (Contributors.md)
+[publishing guidelines]: Publishing.md
+[contributing guidelines]: Contributors.md
 [Java]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 [Gradle]: https://www.gradle.org/
